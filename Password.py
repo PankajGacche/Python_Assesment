@@ -1,5 +1,5 @@
 def check_password_strength(password): #Function declaration.
-        l, u, p, d = 0, 0, 0, 0
+        l, u, p, d = 0, 0, 0, 0 #Variable declaration.
 
         if(len(password)<8):
             return False #Password strength is invalid
