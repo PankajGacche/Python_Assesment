@@ -1,4 +1,4 @@
-def check_password_strength(password):
+def check_password_strength(password): #Function declaration.
         l, u, p, d = 0, 0, 0, 0
 
         if(len(password)<8):
@@ -18,16 +18,16 @@ def check_password_strength(password):
                     p+=1 
 
         if (l>=1 and u>=1 and p>=1 and d>=1 and l+p+u+d==len(password)):
-            return True #Password strength is valid
+            return True 
         else:
-            return False #Password strength is invalid
+            return False 
             
-password_strength=check_password_strength(input("Please enter password: \n"))
+password_strength=check_password_strength(input("Please enter password: \n")) #Calling function and storing result as boolean
 
 if (password_strength):
-    print("Password strength is valid.")
+    print("Password strength is valid.") #Password strength is valid
 else:
-     print("Password strength is invalid.")
+     print("Password strength is invalid.") #Password strength is invalid
 
     
     
