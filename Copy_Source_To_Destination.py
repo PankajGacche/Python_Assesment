@@ -4,7 +4,11 @@ import shutil
 import time;
 import datetime
 import operator
-
+#*************************************************************************************************************************************************
+#Note: Before starting execution of this program, please update Source and Destination path of your system in below variables at line no. 39 & 40.
+#                                                OR
+#Note: If you want to take source and destination path from user, please uncomment line no. 43 and comment out line no.41.
+#*************************************************************************************************************************************************
 def copy_src_to_dest(Source,Destination):
     try:
         source_files = os.listdir(Source) #Fetching the list of all the files from Source to copy and paste to destination.
@@ -32,10 +36,11 @@ def copy_src_to_dest(Source,Destination):
     except FileNotFoundError as e:
         print("Error:",e) 
 
-Source = 'D:\\Pankaj\\Study\\Source\\'
+Source = 'D:\\Pankaj\\Study\\Source\\' 
 Destination = 'D:\\Pankaj\\Study\\Destination\\'
-
 copy_src_to_dest(Source,Destination)
+
+#copy_src_to_dest(input("Please enter source folder path: \n"),input("Please enter destination folder path: \n"))
 
 
     
